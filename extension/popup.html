@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    :root { color-scheme: light dark; }
+    body { width: 240px; margin: 0; font: 13px -apple-system, system-ui, sans-serif; }
+    #row { display: flex; align-items: baseline; gap: 8px; padding: 10px 12px; }
+    #row label { opacity: .65; }
+    #q { flex: 1; min-width: 0; border: 0; outline: none; background: transparent;
+         font: 600 20px ui-monospace, SFMono-Regular, monospace; }
+    #names, #status { padding: 0 12px 8px; font-size: 11px; opacity: .65;
+                      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    #status:empty { display: none; }
+    #status.err { color: #d33; opacity: 1; }
+  </style>
+</head>
+<body>
+  <div id="row"><label for="q">Move to</label><input id="q" inputmode="numeric" autocomplete="off" autofocus></div>
+  <div id="names">Loading windows…</div>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

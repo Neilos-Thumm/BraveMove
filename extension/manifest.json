@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "BraveMove",
+  "version": "1.0",
+  "description": "Move the selected tab(s) to the Brave window with a given name, and follow them.",
+  "permissions": ["tabs", "nativeMessaging"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Move tab(s) to window…"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+Shift+M", "mac": "Alt+Shift+M" },
+      "description": "Move to window: type its number"
+    },
+    "move-to-1": { "description": "Move tab(s) to window 1" },
+    "move-to-2": { "description": "Move tab(s) to window 2" },
+    "move-to-3": { "description": "Move tab(s) to window 3" },
+    "move-to-4": { "description": "Move tab(s) to window 4" },
+    "move-to-5": { "description": "Move tab(s) to window 5" },
+    "move-to-6": { "description": "Move tab(s) to window 6" },
+    "move-to-7": { "description": "Move tab(s) to window 7" },
+    "move-to-8": { "description": "Move tab(s) to window 8" },
+    "move-to-9": { "description": "Move tab(s) to window 9" }
+  }
+}
